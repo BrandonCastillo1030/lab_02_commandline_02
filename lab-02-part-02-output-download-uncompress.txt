@@ -143,15 +143,27 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+curl -o mtec1002 curl -o mtec1002 http://foureyes.github.io/mtec1002-spring201                                                                     4/labs/02/mtec1002-lab-02.zip
+                                         % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: mtec1002
+100   178  100   178    0     0   3869      0 --:--:-- --:--:-- --:--:--  3869<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
 
-
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: 4
+ 
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
 
 Write down the command that you used to uncompress the file.
 ----------
-
+tar -xvzf mtec1002-lab-02.zip
 
 
 ==========
@@ -171,6 +183,19 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 Copy and paste the output below.
 ----------
 
+ 1002/                    mtec1002                                                                                       OneDrive/
+ AppData/                 mtec1002-lab-02.zip/                                                                           Pictures/
+'Application Data'@       mtec1002-spring201                                                                             PrintHood@
+ Contacts/                Music/                                                                                         Recent@
+ Cookies@                'My Documents'@                                                                                'Saved Games'/
+'Creative Cloud Files'/   NetHood@                                                                                       Searches/
+ Desktop/                 NTUSER.DAT                                                                                     SendTo@
+ Documents/               ntuser.dat.LOG1                                                                               'Start Menu'@
+ Downloads/               ntuser.dat.LOG2                                                                                stuff/
+ Favorites/               NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TM.blf                                        Templates@
+ Links/                   NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000001.regtrans-ms   Videos/
+'Local Settings'@         NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000002.regtrans-ms
+ mtec/                    ntuser.ini
 
 
 ==========
@@ -182,7 +207,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+hello.txt
 
 
 ==========
@@ -195,6 +220,8 @@ List the files in the directory you're currently in (which should be home).
 Copy and paste the output below.
 ----------
 
+tar: stuff.tar: Cannot open: Permission denied
+tar: Error is not recoverable: exiting now
 
 
 ==========
@@ -205,6 +232,8 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
+tar: stuff.tar: Cannot open: Permission denied
+tar: Error is not recoverable: exiting now
 
 
 ==========
@@ -212,6 +241,19 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
+ 1002/                    mtec1002                                                                                       OneDrive/
+ AppData/                 mtec1002-lab-02.zip/                                                                           Pictures/
+'Application Data'@       mtec1002-spring201                                                                             PrintHood@
+ Contacts/                Music/                                                                                         Recent@
+ Cookies@                'My Documents'@                                                                                'Saved Games'/
+'Creative Cloud Files'/   NetHood@                                                                                       Searches/
+ Desktop/                 NTUSER.DAT                                                                                     SendTo@
+ Documents/               ntuser.dat.LOG1                                                                               'Start Menu'@
+ Downloads/               ntuser.dat.LOG2                                                                                stuff/
+ Favorites/               NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TM.blf                                        stuff.tar/
+ Links/                   NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000001.regtrans-ms   Templates@
+'Local Settings'@         NTUSER.DAT{4e074668-0c1c-11e7-a943-e41d2d718a20}.TMContainer00000000000000000002.regtrans-ms   Videos/
+ mtec/                    ntuser.ini
 
 
 
@@ -223,7 +265,7 @@ gzip stuff.tar
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
 
-
+stuff.tar.gz
 
 ==========
 22. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
@@ -236,7 +278,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+i need help
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -245,7 +287,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+i need help
 
 
 ==========
@@ -264,8 +306,9 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 Write out the commands that you used to do this.
 ----------
 
-
+i need help
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+i need help
